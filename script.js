@@ -4,7 +4,7 @@ const cityname =document.getElementById('city-name');
 const temp = document.getElementById('temp');
 const time = document.getElementById('city-time');
 async function getdata(cityName){
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=1bd75a6b7c404b069d8125941260505&q=${cityName}&aqi=no`);
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=1bd75a6b7c404b069d8125941260505&q=${cityName}&aqi=no`);
     return  await response.json();
 }
 button.addEventListener('click', async () => {
